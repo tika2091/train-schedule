@@ -22,7 +22,7 @@ $("#submit-btn").on("click", function(event) {
   // GRAB THE USERTEXT INPUT
   var trainName= $("#train").val().trim();
   var destination = $("#destination").val().trim();
-  var startTime = moment($("#start").val().trim(, "DD/MM/YY").format("X");
+  var startTime = moment($("#start").val().trim(,"HH:mm").subtract(10, "years").format("X");
   var frequency = $("frequency").val().trim();
 
   //create variable to hold data locally
